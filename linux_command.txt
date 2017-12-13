@@ -1,0 +1,51 @@
+//打印上层log
+adb reboot && adb logcat -v time > C:\Users\qiangang\Desktop\111.txtsk
+
+//获取属性值
+adb shell getprop persist.asus.glove
+
+//adb中过滤和查找关键字函数
+dmesg -c | grep qiangang    //-c代表清除当前信息
+
+//撤回提交时保留本地的记录
+git reset --soft HEAD^
+
+//查找线程号
+psaux|grep 线程名
+
+//显示所有的内核线程
+ps afx
+
+//使用top命令来查看线程的cpu利用率
+top -p 线程号
+
+//去TP虚拟按键的adb命令
+adb shell settings put global policy_control immersive.navigation=*
+
+//编译谷歌源生launch
+./quick_build.sh E260L_WW opt_none mmma packages/apps/Launcher3/
+
+//adb下打印关键字
+adb shell ls -al /proc/908/fd | grep "led" > Desktop/log_led.txt
+
+//adb查看gpio状态
+adb shell cd/sys/devices/virtual/misc/mtgpio
+cat /sys/devices/virtual/misc/mtgpio/pin
+
+//撤销暂存区的修改
+git reset HEAD file
+
+//丢弃工作区的修改
+git checkout -- file
+
+//github中创建SSH Key
+ssh-keygen -t rsa -C "youremail@example.com"
+
+//关联一个远程库
+git remote add origin git@server-name:path/repo-name.git
+
+//第一次推送master分支的所有内容
+git push origin master
+
+//git中配置别名
+ git config --global alias.st status
